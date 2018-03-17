@@ -1,9 +1,18 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/InputNode.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Score.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/HeadlineManager.gd" type="Script" id=3]
-[ext_resource path="res://Scripts/Clock.gd" type="Script" id=4]
+[ext_resource path="res://Fonts/segment7/Segment7Standard.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://Scripts/Clock.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 144
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 4 )
+_sections_unfolded = [ "Font", "Font/fallback", "Settings" ]
 
 [node name="Game" type="Node" index="0"]
 
@@ -41,6 +50,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
 bbcode_text = ""
 visible_characters = -1
@@ -52,8 +62,8 @@ scroll_active = true
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-script = ExtResource( 4 )
-_sections_unfolded = [ "Anchor", "BBCode" ]
+script = ExtResource( 5 )
+_sections_unfolded = [ "Anchor", "BBCode", "custom_fonts" ]
 
 [node name="Timer" type="Timer" parent="Clock/ClockLabel" index="1"]
 
