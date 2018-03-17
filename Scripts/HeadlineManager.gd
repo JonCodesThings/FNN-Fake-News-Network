@@ -19,11 +19,8 @@ func load_headlines(path):
 		file.open(path, file.READ)
 		while !file.eof_reached():
 			string_arr.push_back(file.get_csv_line(","))
-			print(string_arr[string_arr.size() - 1])
 			score_arr.push_back(file.get_csv_line(","))
-			print(score_arr[score_arr.size() - 1])
 		file.close()
-		print(string_arr.size())
 	pass
 	
 func generate_headlines():
