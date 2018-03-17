@@ -18,9 +18,9 @@ func AddScore(amount):
 
 ## Loads the total score from file
 func LoadFromFile(path):
-	var file = file.new()
+	var file = File.new()
 	
-	if file_exists(path):
+	if file.file_exists(path):
 		#open and place the contents into a varable
 		file.open(path, file.READ)
 		var content = file.get_float()
@@ -36,8 +36,8 @@ func LoadFromFile(path):
 
 ## Saves the total score to file
 func SaveToFile(path):
-	var file = file.new()	
-	file.open(path, file.Write_Read)
+	var file = File.new()	
+	file.open(path, file.WRITE_READ)
 	file.store_float(struct_totalScore.totalScore)
 	file.close()
 	pass
@@ -47,6 +47,20 @@ func SaveToFile(path):
 #	# Update game logic here.
 #	pass
 
+##all functions below can be called without arguemtnts
 
-func _on_Add_To_Score_pressed():
+func TestAddScore():
+	struct_totalScore.totalScore += 1
+	get_node("Control/Current Score").text = str(struct_totalScore.totalScore)
+	pass
+
+func TestSaveScore():
+	SaveToFile("user://savegame.save")
+	get_node("Control/Current Score").text = str(struct_totalScore.totalScore) + " Saved!"
+	pass # replace with function body
+
+
+func TestLoadFromFile():
+	LoadFromFile("user://savegame.save")
+	get_node("Control/Current Score").text = str(struct_totalScore.totalScore) + " Loaded!"
 	pass # replace with function body

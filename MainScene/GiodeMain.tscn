@@ -20,7 +20,27 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 _sections_unfolded = [ "Anchor" ]
 
-[node name="Add To Score" type="Button" parent="Control" index="0"]
+[node name="Current Score" type="Label" parent="Control" index="0"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -220.5
+margin_top = -63.0
+margin_right = 220.5
+margin_bottom = 63.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Add To Score" type="Button" parent="Control" index="1"]
 
 anchor_left = 0.0
 anchor_top = 1.0
@@ -44,7 +64,7 @@ flat = false
 align = 1
 _sections_unfolded = [ "Rect" ]
 
-[node name="Save Score" type="Button" parent="Control" index="1"]
+[node name="Save Score" type="Button" parent="Control" index="2"]
 
 anchor_left = 0.5
 anchor_top = 1.0
@@ -69,7 +89,7 @@ flat = false
 align = 1
 _sections_unfolded = [ "Rect" ]
 
-[node name="Load Score" type="Button" parent="Control" index="2"]
+[node name="Load Score" type="Button" parent="Control" index="3"]
 
 anchor_left = 1.0
 anchor_top = 1.0
@@ -93,6 +113,10 @@ flat = false
 align = 1
 _sections_unfolded = [ "Rect" ]
 
-[connection signal="pressed" from="Control/Add To Score" to="." method="AddScore"]
+[connection signal="pressed" from="Control/Add To Score" to="." method="TestAddScore"]
+
+[connection signal="pressed" from="Control/Save Score" to="." method="TestSaveScore"]
+
+[connection signal="pressed" from="Control/Load Score" to="." method="TestLoadFromFile"]
 
 
