@@ -3,13 +3,16 @@ extends Node
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
+var m_text = ""
+var m_score = 0
+var m_selected = false
 
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
-	var m_text = ""
-	var m_score = 0
-	var m_selected = false
+	m_text = ""
+	m_score = 0
+	m_selected = false
 	pass
 	
 func get_selected():

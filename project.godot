@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="FNN Fake News Network"
-run/main_scene="res://Scenes/FraserScene.tscn"
+run/main_scene="res://Scenes/Game.tscn"
 config/icon="res://icon.png"
 
 [rendering]
