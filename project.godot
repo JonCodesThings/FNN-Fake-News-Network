@@ -14,6 +14,14 @@ config/name="FNN Fake News Network"
 run/main_scene="res://MainScene/Game.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/resizable=false
+window/size/fullscreen=true
+window/stretch/mode="viewport"
+
 [rendering]
 
 quality/filters/anisotropic_filter_level=16
