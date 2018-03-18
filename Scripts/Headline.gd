@@ -10,7 +10,7 @@ var m_score = 0
 var m_selected = false
 
 func _ready():
-	self.set("custom_fonts/fonts", load("res://Fonts/runescape_uf/runescape_uf.tres"))
+	self.add_font_override("font", load("res://Fonts/runescape_uf/runescape_uf.tres"))
 	self.set_size(Vector2(300, 300))
 	# Called every time the node is added to the scene.
 	# Initialization here
