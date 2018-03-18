@@ -6,10 +6,19 @@ var struct_totalScore = {
 	totalScore = 0
 }
 
+var m_headlines = PoolStringArray()
+
+func get_score():
+	return struct_totalScore.totalScore
+
 func _ready():
+	m_headlines.resize(0)
 	# Called every time the node is added to the scene.
 	# Initialization here
 	pass
+	
+func addHeadline(headl):
+	m_headlines.push_back(headl)
 
 ## Adds amount to the totalScore of struct_totalScore
 func AddScore(amount):
@@ -42,7 +51,7 @@ func SaveToFile(path):
 	file.close()
 	pass
 
-#func _process(delta):
+#func _process(delta)
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
 #	pass

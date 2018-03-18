@@ -1,11 +1,81 @@
-[gd_scene format=2]
+[gd_scene load_steps=6 format=2]
 
-[node name="Background" type="CanvasLayer"]
+[ext_resource path="res://Scripts/Replay.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/ReplayBackground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/ScoreText.gd" type="Script" id=3]
+[ext_resource path="res://MainScene/HeadlineText.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Time.gd" type="Script" id=5]
 
-layer = 1
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+[node name="Replay" type="Node" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="Background" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="ScoreText" type="Label" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 244.0
+margin_top = 396.0
+margin_right = 777.0
+margin_bottom = 677.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script = ExtResource( 3 )
+
+[node name="HeadlineText" type="Label" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 384.0
+margin_top = 777.0
+margin_right = 1206.0
+margin_bottom = 858.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script = ExtResource( 4 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="Time" type="Label" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 220.0
+margin_top = 777.0
+margin_right = 395.0
+margin_bottom = 853.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script = ExtResource( 5 )
+_sections_unfolded = [ "Rect" ]
 
 
