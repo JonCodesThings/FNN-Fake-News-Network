@@ -59,8 +59,13 @@ func _ready():
 
 func _process(delta):
 	deltacount += delta
-	if deltacount >= 0.1  && (headline_left.get_selected() || headline_right.get_selected()):
-		generate_headlines()
+	if deltacount >= 0.1:
+		if headline_left.get_selected():
+			get_tree().get_root().find_node("Score", true, false).AddScore(headline_left.get_score())
+			generate_headlines()
+		elif headline_right.get_selected():
+			get_tree().get_root().find_node("Score", true, false).AddScore(headline_right.get_score())
+			generate_headlines()	
 		deltacount = 0
 	pass
 #	# Called every frame. Delta is time since last frame.
