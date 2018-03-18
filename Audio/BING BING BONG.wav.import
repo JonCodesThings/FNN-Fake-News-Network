@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/BING BING BONG.wav-78cf195dad902c3d8388d9b9a2fb88ec.sample"
+
+[deps]
+
+source_file="res://Audio/BING BING BONG.wav"
+source_md5="35ef6879626cbac6376c5647744b54b2"
+
+dest_files=[ "res://.import/BING BING BONG.wav-78cf195dad902c3d8388d9b9a2fb88ec.sample" ]
+dest_md5="ddeb635cb3ada7d37224b9eafe8b9f0c"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

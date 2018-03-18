@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/CHA_CHING.wav-db0bb0311a2a63b9fd35cbd04295d54c.sample"
+
+[deps]
+
+source_file="res://Audio/CHA_CHING.wav"
+source_md5="89025984cf5fceedfb13861de415410f"
+
+dest_files=[ "res://.import/CHA_CHING.wav-db0bb0311a2a63b9fd35cbd04295d54c.sample" ]
+dest_md5="ef462a6ae240a1b7f53056d7c5a50771"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

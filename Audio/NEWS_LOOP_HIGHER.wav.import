@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/NEWS_LOOP_HIGHER.wav-dc1393cdab787b4927e081091bfc1776.sample"
+
+[deps]
+
+source_file="res://Audio/NEWS_LOOP_HIGHER.wav"
+source_md5="7244d9b9ef69010451b2c3ef91011bf2"
+
+dest_files=[ "res://.import/NEWS_LOOP_HIGHER.wav-dc1393cdab787b4927e081091bfc1776.sample" ]
+dest_md5="883f7ebd3904eb3ddc2d64eff5cb5825"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -10,7 +10,7 @@ var string_arr = PoolStringArray()
 var score_arr = PoolIntArray()
 var left_child_index = -1
 var right_child_index = -1
-var headline_count = 5
+var headline_count = 0
 var deltacount = 0
 
 func load_headlines(path):
@@ -24,6 +24,7 @@ func load_headlines(path):
 			string_arr.push_back(str(file.get_line()))
 			score_arr.push_back(int(file.get_line()))
 		file.close()
+		headline_count = string_arr.size()
 		print(string_arr[0])
 	pass
 	
@@ -51,8 +52,8 @@ func _ready():
 	add_child(headline_right)
 	left_child_index = headline_left.get_index()
 	right_child_index = headline_right.get_index()
-	headline_left.set_position(Vector2(get_viewport_rect().size.x / 8, get_viewport_rect().size.y / 2.25))
-	headline_right.set_position(Vector2(get_viewport_rect().size.x / 8 * 6, get_viewport_rect().size.y / 2.25))
+	headline_left.set_position(Vector2(get_viewport_rect().size.x / 16, get_viewport_rect().size.y / 2.75))
+	headline_right.set_position(Vector2(get_viewport_rect().size.x / 1.30, get_viewport_rect().size.y / 2.75))
 	load_headlines("res://data.data")
 	generate_headlines()
 	pass

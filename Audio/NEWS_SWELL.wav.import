@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/NEWS_SWELL.wav-035b38c7011e87eb4d6b053410b70dad.sample"
+
+[deps]
+
+source_file="res://Audio/NEWS_SWELL.wav"
+source_md5="007b567489a395a1b9a7684f1e681b87"
+
+dest_files=[ "res://.import/NEWS_SWELL.wav-035b38c7011e87eb4d6b053410b70dad.sample" ]
+dest_md5="5469aa3432ea6d30ee3aca18f62db8c1"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
