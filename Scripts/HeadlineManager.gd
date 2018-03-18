@@ -15,29 +15,33 @@ var deltacount = 0
 
 func load_headlines(path):
 	var file = File.new()
+	string_arr.resize(0)
+	score_arr.resize(0)
 	
 	if file.file_exists(path):
 		file.open(path, file.READ)
 		while !file.eof_reached():
 			string_arr.push_back(str(file.get_line()))
 			score_arr.push_back(int(file.get_line()))
-			print(string_arr[string_arr.size() - 1])
 		file.close()
+		print(string_arr[0])
 	pass
 	
 func generate_headlines():
-	var random = randi()%headline_count+1
+	var random = randi()%(headline_count-1)+0
 	get_child(left_child_index).set_text(str(string_arr[random]))
 	get_child(left_child_index).set_score(score_arr[random])
-	random = randi()%headline_count+1
+	random = randi()%(headline_count-1)+0
 	get_child(right_child_index).set_text(string_arr[random])
 	get_child(right_child_index).set_score(score_arr[random])
 	
 	while get_child(left_child_index).get_score() == get_child(right_child_index).get_score():
-		random = randi()%headline_count+1
+		random = randi()%(headline_count-1)+0
 		get_child(right_child_index).set_text(str(string_arr[random]))
 		get_child(right_child_index).set_score(score_arr[random])
 
+	get_child(left_child_index).set_selected(false)
+	get_child(right_child_index).set_selected(false)
 	pass
 
 func _ready():
@@ -54,9 +58,10 @@ func _ready():
 	pass
 
 func _process(delta):
-	#eltacount += delta
-	#f delta > 1000:
-		#generate_headlines()
+	deltacount += delta
+	if deltacount >= 0.1  && (headline_left.get_selected() || headline_right.get_selected()):
+		generate_headlines()
+		deltacount = 0
 	pass
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
