@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 # class member variables go here, for example:
 # var a = 2
@@ -47,8 +47,8 @@ func _ready():
 	add_child(headline_right)
 	left_child_index = headline_left.get_index()
 	right_child_index = headline_right.get_index()
-	headline_left.set_position(Vector2(0, 0))
-	headline_right.set_position(Vector2(800, 200))
+	headline_left.set_position(Vector2(get_viewport_rect().size.x / 8, get_viewport_rect().size.y / 2.25))
+	headline_right.set_position(Vector2(get_viewport_rect().size.x / 8 * 6, get_viewport_rect().size.y / 2.25))
 	load_headlines("res://data.data")
 	generate_headlines()
 	pass

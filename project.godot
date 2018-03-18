@@ -22,6 +22,13 @@ window/size/resizable=false
 window/size/fullscreen=true
 window/stretch/mode="viewport"
 
+[input]
+
+select_left=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777231,"unicode":0,"echo":false,"script":null)
+ ]
+select_right=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777233,"unicode":0,"echo":false,"script":null)
+ ]
+
 [rendering]
 
 quality/filters/anisotropic_filter_level=16
