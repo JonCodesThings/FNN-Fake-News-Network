@@ -11,10 +11,12 @@ func _ready():
 	
 func _process(delta):
 	if Input.is_action_pressed("select_left"):
-		get_tree().get_root().find_node("Headlines", true, false).get_child(0).set_selected(true)
+		if !get_tree().get_root().find_node("Headlines", true, false).get_child(0).get_selected():
+			get_tree().get_root().find_node("Headlines", true, false).get_child(0).set_selected(true)
 		pass
 	elif Input.is_action_pressed("select_right"):
-		get_tree().get_root().find_node("Headlines", true, false).get_child(1).set_selected(true)
+		if !get_tree().get_root().find_node("Headlines", true, false).get_child(1).get_selected():
+			get_tree().get_root().find_node("Headlines", true, false).get_child(1).set_selected(true)
 		pass
 	else:
 		pass
