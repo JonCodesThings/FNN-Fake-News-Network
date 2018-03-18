@@ -10,7 +10,7 @@ var m_selected = false
 
 func _ready():
 	self.add_font_override("font", load("res://Fonts/runescape_uf/runescape_uf.tres"))
-	self.set_size(Vector2(100, 100))
+	self.set_size(Vector2(300, 300))
 	self.autowrap = true
 	self.add_color_override("font_color", Color(0, 0, 0))
 	# Called every time the node is added to the scene.

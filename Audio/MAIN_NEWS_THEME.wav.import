@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MAIN_NEWS_THEME.wav-d6041ea14c846fc95dc41587f059e3f8.sample"
+
+[deps]
+
+source_file="res://Audio/MAIN_NEWS_THEME.wav"
+source_md5="825b3bca1954acdea3dd4038519b241f"
+
+dest_files=[ "res://.import/MAIN_NEWS_THEME.wav-d6041ea14c846fc95dc41587f059e3f8.sample" ]
+dest_md5="db3b458f3e5b5c0f5e75d841ae201591"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

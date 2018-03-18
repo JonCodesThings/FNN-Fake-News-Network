@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/YOU ARE FAKE NEWS.wav-eef756e3583b9324c2d57f2180441c1c.sample"
+
+[deps]
+
+source_file="res://Audio/YOU ARE FAKE NEWS.wav"
+source_md5="f95a117c731417018a4fbc28e903c1f7"
+
+dest_files=[ "res://.import/YOU ARE FAKE NEWS.wav-eef756e3583b9324c2d57f2180441c1c.sample" ]
+dest_md5="4fc73c5d57e0ded39dbe3992f94e3fec"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

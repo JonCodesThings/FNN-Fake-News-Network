@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/HELLO.wav-4eeb1e90a62426761710551be8c538c8.sample"
+
+[deps]
+
+source_file="res://Audio/HELLO.wav"
+source_md5="f2027177acc7b2588070f323cff9f8a9"
+
+dest_files=[ "res://.import/HELLO.wav-4eeb1e90a62426761710551be8c538c8.sample" ]
+dest_md5="0b97b8150fb09b865c382de9b97a082d"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

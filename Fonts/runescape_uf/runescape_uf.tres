@@ -6,7 +6,7 @@ font_path = "res://Fonts/runescape_uf/runescape_uf.ttf"
 
 [resource]
 
-size = 72
+size = 32
 use_mipmaps = false
 use_filter = false
 font_data = SubResource( 1 )

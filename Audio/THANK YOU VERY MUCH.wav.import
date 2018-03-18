@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/THANK YOU VERY MUCH.wav-f307f99f4dce1cb7fbb6ce3ce8505799.sample"
+
+[deps]
+
+source_file="res://Audio/THANK YOU VERY MUCH.wav"
+source_md5="e5d3b972e4c3abff64df5f1c0ee69833"
+
+dest_files=[ "res://.import/THANK YOU VERY MUCH.wav-f307f99f4dce1cb7fbb6ce3ce8505799.sample" ]
+dest_md5="37d37054c397b5367e268b777418d1bd"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

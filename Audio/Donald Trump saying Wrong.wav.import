@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Donald Trump saying Wrong.wav-86af59a01d27901c91489b85392fb2b3.sample"
+
+[deps]
+
+source_file="res://Audio/Donald Trump saying Wrong.wav"
+source_md5="76b760111106fc69bb122639fd9a3797"
+
+dest_files=[ "res://.import/Donald Trump saying Wrong.wav-86af59a01d27901c91489b85392fb2b3.sample" ]
+dest_md5="ed150daaf8a5bb20629830f88cd5dc2c"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
